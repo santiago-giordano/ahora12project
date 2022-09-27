@@ -12,3 +12,7 @@ First, I created a new database on Microsoft SQL Server, and imported both new e
 
 ## 4. Connecting SQL to Jupyter Notebook
 I created a connection from my jupyter notebook to Microsoft SQL Server using pyodbc module. Then, using pandas I created a new dataframe importing the data from the table created on the previous step.
+> V1.1: New connection using SQLAlquemy module (it works better).
+
+## 5. Creating dataframes and plots on pandas/matplotlib
+I created two dataframes showing the sum of billings by segment and then some plots to show the results.
