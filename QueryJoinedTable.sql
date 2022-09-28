@@ -1,5 +1,7 @@
 
 # Se crea una vista a partir de la "inner join" de las tablas "facturacion" y "operaciones"
+# En principio vamos a extraer sólo los valores del año 2021
+
 CREATE VIEW opyfact
 AS SELECT operaciones.mes_anio, operaciones.provincia, operaciones.rubro, operaciones.operaciones, facturacion.facturacion
 FROM operaciones
