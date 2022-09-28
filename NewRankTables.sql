@@ -1,3 +1,4 @@
+#USING "RANK()"
 # Se crean dos tablas nuevas que contienen 
 1. las tres facturaciones más altas por provincia
 2. las tres facturaciones más altas por rubro
@@ -20,6 +21,9 @@ INTO RankFactProv
 FROM rank_fact
 WHERE rank_id < 4;
 
+# Finalmente se borra la vista
+DROP VIEW IF EXISTS rank_fact;
+
 
 # TABLA 2
 # Primero se crea una vista agregando la columna donde se rankean los valores de mayor a menor
@@ -38,3 +42,6 @@ SELECT *
 INTO RankFactRubro 
 FROM rank_fact_rubro
 WHERE rank_id < 4 ;
+
+# Finalmente se borra la vista
+DROP VIEW IF EXISTS rank_fact_rubro;
