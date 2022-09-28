@@ -16,3 +16,4 @@ I created a connection from my jupyter notebook to Microsoft SQL Server using py
 
 ## 5. Creating dataframes and plots on pandas/matplotlib
 I created two dataframes showing the sum of billings by segment and then some plots to show the results.
+> V1.2: Two added dataframes: 1. Top 3 Billings by Province, 2. Top 3 Billings by Segment.
